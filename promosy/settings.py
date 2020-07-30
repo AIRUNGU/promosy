@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -79,7 +80,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-        "hosts": [('127.0.0.1', 6379)],
+        "hosts": [('https://afternoon-badlands-35364.herokuapp.com/', 6379)],
         },
     },
 }
@@ -144,3 +145,5 @@ LEAFLET_CONFIG = {
     'TILES': 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     'ATTRIBUTION_PREFIX': 'Powered by GEO-REAL TIME REPORTER &copy; lEAFLET',
 }
+
+django_heroku.settings(locals())
