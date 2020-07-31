@@ -74,6 +74,7 @@ TEMPLATES = [
     },
 ]
 
+WSGI_APPLICATION = 'promosy.wsgi.application'
 ASGI_APPLICATION = 'promosy.routing.application'
 
 CHANNEL_LAYERS = {
@@ -84,7 +85,7 @@ CHANNEL_LAYERS = {
         },
     },
 }
-# WSGI_APPLICATION = 'promosy.wsgi.application'
+
 
 
 # Database
