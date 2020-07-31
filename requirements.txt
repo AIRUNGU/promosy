@@ -7,4 +7,4 @@ django-leaflet
 channels-redis
 jsonfield
 channels
-gdal
+gdal-bin
