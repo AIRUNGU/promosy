@@ -80,7 +80,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-        "hosts": [('https://afternoon-badlands-35364.herokuapp.com/', 6379)],
+        "hosts": [('afternoon-badlands-35364.herokuapp.com', 6379)],
         },
     },
 }
