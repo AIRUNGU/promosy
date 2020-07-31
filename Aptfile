@@ -1,1 +1,10 @@
+django
+gunicorn
+django-heroku
+dj-database-url 
+django-geojson
+django-leaflet
+channels-redis
+jsonfield
+channels
 gdal-bin
