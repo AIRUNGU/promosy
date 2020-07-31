@@ -8,3 +8,4 @@ channels-redis
 jsonfield
 channels
 gdal-bin
+python-pkg-resources
