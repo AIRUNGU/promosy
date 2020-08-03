@@ -1,2 +1,6 @@
+web: daphne promosy.asgi:application --port $PORT --bind 0.0.0.0 -v2
 web: gunicorn promosy.wsgi --log-file -
-daphne -p 8001 promosy.asgi.application
+
+
+
+
