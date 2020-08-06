@@ -147,4 +147,3 @@ LEAFLET_CONFIG = {
     'ATTRIBUTION_PREFIX': 'Powered by GEO-REAL TIME REPORTER &copy; lEAFLET',
 }
 
-django_heroku.settings(locals())
