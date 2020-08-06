@@ -1,4 +1,6 @@
-web: daphne promosy.asgi:application --port $PORT 
+web: gunicorn promosy.wsgi --log-file -
+web2: daphne promosy.routing:application --port $PORT --bind 0.0.0.0 -v2
+worker: python manage.py runworker channel_layer -v2
 
 
 

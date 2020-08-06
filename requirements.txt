@@ -1,10 +1,11 @@
 django==2.2.15
 gunicorn
-daphne==2.2.0
+daphne
 django-heroku
 dj-database-url 
 django-geojson==3.0.0
 django-leaflet==0.27.1
-channels-redis==2.3.2
+channels-redis
 jsonfield=3.0.0
-channels=2.1.0
+channels
+python-pkg-resources
